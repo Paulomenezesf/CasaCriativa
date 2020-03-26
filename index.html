@@ -1,72 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset=UTF-8">
-        <title>Casa Criativa</title>
 
-        <style>
-            body{
-                background: #e5e5e5;
-                color: #25282B;
-            }
+<head>
+    <meta charset=UTF-8 ">
+    <title>Casa Criativa</title>
+    <link rel="stylesheet " href="style.css "/>
+</head>
 
-            button{
-                border: none;
-                color: #ff5E84;
-                font-weight: bold;
-                background: none;
-            }
+<body>
 
-            .fat{
-                color: white;
-                background: #ff5E84;
-            }
+    <img src="logo.png " alt="Imagem da marca ">
 
-            #footer a{
-                color: #25282b;
-                text-decoration: none;
+    <p>
+        Ficar em casa em períodos longos, não deve ser nada fácil.
+    </p>
+    <p>
+        Iremos catalogar ideias,<strong> brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for
+        necessário para tornar esse momento mais interessante.
+    </p>
+    <p>
+        Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicioando a sua ideia.
+    </p>
 
-            }
+    <button>+ Adicionar ideia</button>
+    <button class="fat ">Ver ideias</button>
 
-            .hide{
-                display: none;
-            }
-            
-        </style>
-    </head> 
-    <body>
-   
-        <img src="logo.png" alt="Imagem da marca">
+    <p id="footer ">Com 💖 <a href="https://github.com/Paulomenezesf "> Paulo Menezes</a></p>
 
-        <p>
-            Ficar em casa em períodos longos, não deve ser nada fácil.
-        </p>
-        <p>
-            Iremos catalogar ideias,<strong> brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for necessário para tornar esse momento mais interessante.
-        </p>
-        <p>
-            Comece clicando em ver ideias para ver as  ideias cadastradas e contribua adicioando a sua ideia.
-        </p>
-
-        <button>+ Adicionar ideia</button>
-        <button class="fat">Ver ideias</button>
-
-        <p id="footer">Com 💖 <a href="https://github.com/Paulomenezesf"> Paulo Menezes</a></p>
-
-
-
-        <script>
-
-            document
-                .querySelector("button.fat")
-                .addEventListener("click", function(){
-                    document
-                        .querySelector("#footer")
-                        .classList
-                        .toggle("hide")
-                })
-        </script>
-    </body>
+    <script src="scripts.js "></script>
+</body>
 
 
 </html>
