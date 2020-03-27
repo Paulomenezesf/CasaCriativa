@@ -5,7 +5,15 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-body #conteiner{
+body.hideScroll{
+    overflow: hidden;
+}
+
+#modal.addScroll{
+    overflow: auto;
+}
+
+#conteiner{
     width: 80%;
     max-width: 980px;
     margin: 40px auto;
@@ -40,20 +48,33 @@ button {
 }
 
 button:hover{
-    text-decoration: underline;
-}
-
-.fat {
-    color: white;
-    background: #ff5E84;
-    width: 150px;
-    height: 40px;
-    border-radius: 6px;
-    box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.16);
-}
-.fat:hover{
+    background-color: #0984e3;
     text-decoration: none;
 }
+
+.button {
+    width: 150px;
+    height: 40px;
+
+    background: #ff5E84;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.16);
+}
+.button:hover{
+    text-decoration: none;
+}
+
+
+
 
 footer{
     text-align: center;
@@ -110,9 +131,10 @@ p, .description{
 #modal{
     background: #ff5E84;
     position: absolute;
-    width: 100vw;
-    height: 100vh;
     top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     display: flex;
     justify-content: center;
 }
@@ -204,4 +226,73 @@ form button:hover{
 #modal.hide {
     opacity: 0;
     visibility: hidden;
+}
+
+
+
+/*  ideias.html */
+
+#page-ideias
+#conteiner{
+    display: block;
+}
+
+#page-ideias
+header{
+    display:flex;
+    justify-content: space-between;
+}
+
+#page-ideias nav{
+    display:flex;
+    align-items: center;
+    
+}
+
+#page-ideias nav li{
+    list-style-type: none;
+    margin-right: 16px;
+    
+}
+
+#page-ideias nav li a{
+    color: #25282b;
+}
+
+#page-ideias nav li:last-child{
+    margin: 0;
+}
+
+
+
+section#title{
+    text-align: center;
+    margin: 64px 0;
+}
+
+section#title p{
+    opacity: 0.7;
+    margin: 0;
+}
+
+section#title h1{
+    margin: 0;
+    font-size: 28px;
+}
+
+section#ideias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+section#ideias .idea{
+    margin:0;
+}
+
+section#ideias,
+footer,
+section#title{
+    margin-top: 64px;
 }
